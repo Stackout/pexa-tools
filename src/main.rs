@@ -14,7 +14,7 @@ const DIGITS58: [char; 58] = ['1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 
  
 fn main() {
     
-    let vanity = String::from("XPexaAsset");
+    let vanity = String::from("XPexaAssetBurn");
     let place_holder = "X";
 
     // Generate string with amount of Xs depending on vanity size
