@@ -63,9 +63,6 @@ fn validate_address(address: &str) -> bool {
         Ok(x) => x,
         Err(_) => return false
     };
-    if decoded[0] != 0 {
-        return false;
-    }
     let mut sha = Sha256::new();
     sha.input(&decoded[0..21]);
     let mut first_round = vec![0u8; sha.output_bytes()];
